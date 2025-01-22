@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a Cantar con Melanie</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar {
+            background-color: #ff77a9;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+		
+
+        /* Imagen de fondo a pantalla completa */
+        .header-image {
+            background-image: url('jpgs/portada.jpg');
+            background-size:  1400px 820px;
+            background-position: center;
+            height: 100vh; /* Ocupa toda la pantalla */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        .header-image h1 {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 3rem;
+        }
+        /* Carrusel a pantalla completa */
+        .carousel-container {
+            height: 110vh; /* Ocupa toda la pantalla */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .carousel-caption h5 {
+            font-size: 1.5em;
+            background-color: rgba(255, 119, 169, 0.8);
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .footer {
+            background-color: #ff77a9;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .header-image h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Aprende a Cantar con Melanie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactoyredes.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Imagen de Fondo -->
+    <div class="header-image">
+        
+    </div>
+
+    <!-- Carrusel de Temas Principales -->
+    <div class="carousel-container">
+        <div id="carouselTopics" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="jpgs/tema_0.jpg" class="d-block w-100" alt="Tips Para Iniciar a Cantar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tips de pasos iniciales antes de cantar</h5>
+                        <p>Consejos útiles para tener un buen inicio de ensayo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="jpgs/tema_1.jpg" class="d-block w-100" alt="Técnicas de Respiración">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Técnicas de Respiración</h5>
+                        <p>Aprende a controlar tu aparato fonador para mejorar tu canto.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="jpgs/tema_2.jpg" class="d-block w-100" alt="El Rango Vocal">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Expansión del Rango Vocal</h5>
+                        <p>Descubre cómo colocar notas más altas y más bajas.</p>
+                    </div>
+                </div>
+				<div class="carousel-item">
+                    <img src="jpgs/tema_3.jpg" class="d-block w-100" alt="El Rango Vocal">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Armonía con voces</h5>
+                        <p>Te enseñaremos como hacer armonia con las voces</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselTopics" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselTopics" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <p>&copy; 2024 Aprende a Cantar con Melanie. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
